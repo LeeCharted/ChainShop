@@ -1,0 +1,146 @@
+﻿@model WeixinGold.Models.Home.IndexView
+@{
+    ViewBag.Title = "南方夺宝";
+}
+<script src="~/Scripts/jQueryRotate.js"></script>
+<link href="~/Content/stytle/index.css" rel="stylesheet" />
+<div class="app" id="App">
+    <div class="rotate-con-pan-box">
+        <div class="rotate-con-pan">
+            <img id="rotate" src="~/Content/img/12.png" />
+        </div>
+        <div class="rotate-con-zhen">
+            <img src="~/Content/img/13.png" />
+        </div>
+    </div>
+    <div class="hidden_index">
+        <div class="shade">
+        </div>
+        <div class="point">
+            <img src="~/Content/img/Award.png" />
+        </div>
+        <div class="error_va" onclick="drop()">
+            <img src="~/Content/img/error.png" />
+        </div>
+        <div class="win_severse">
+            <ul>
+                <li class="promptMessage"><span id="errormessage"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="" style="height:2rem;">
+        @if (HttpContext.Current.Request.Cookies["weigoldcook"] == null)
+        {
+            <div class="App-land">
+                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form_group_box" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        <label>游戏账号</label>
+                        <div class="form-group-input">
+                            @Html.TextBoxFor(x => x.Account)
+                            <div class="error">
+                                @Html.ValidationMessageFor(x => x.Account)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>游戏密码</label>
+                        <div class="form-group-input">
+                            @Html.PasswordFor(x => x.Password)
+                            <div class="error">
+                                @Html.ValidationMessageFor(x => x.Password)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="land">
+                        <input type="image" class="subImg" src="~/Content/img/6.png" name="name" value="" />
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="log_off">
+                <div class="head_scul">
+                    <img src="/Home/getuserimg/@WeixinGold.Commom.AES.getAesDeciphering(HttpUtility.UrlDecode(Request.Cookies["weigoldcook"]["uid"]))" />
+                </div>
+                <span>@HttpUtility.UrlDecode(Request.Cookies["weigoldcook"]["nickname"])</span>
+                <a href="/Home/LogionOut">注销</a>
+            </div>
+        }
+    </div>
+    <div class="winner">
+        <div class="winner_title">
+            <img src="~/Content/img/3.png" />
+        </div>
+        <div class="winner_big" id="winner_big">
+            <div class="winner_box" id="winner_box">
+                <ul>
+                    <li>12:12:11</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:12</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:13</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:14</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:15</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:16</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:17</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:18</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:19</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+                <ul>
+                    <li>12:12:19</li>
+                    <li>就是这样子的</li>
+                    <li>获得了100万银子</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="height"></div>
+</div>
+<div class="downloadBox">
+    <div class="logo">
+        <img src="~/Content/img/10.png" />
+    </div>
+    <div class="prompt">
+        <h3>南方游戏&nbsp;&nbsp;手机客户端</h3>
+        <p>支持苹果 安卓用户下载</p>
+    </div>
+    <a href="#" class="fast_down">
+        <img src="~/Content/img/8.png" />
+    </a>
+</div>
+@Scripts.Render("~/bundles/homeindex")

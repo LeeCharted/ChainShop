@@ -1,0 +1,323 @@
+﻿
+.app {
+    width: 100%;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+}
+
+.rotate-con-pan-box {
+    background: url('../img/11.png') no-repeat 0 0;
+    background-size: 100%;
+    position: relative;
+    top: 0.2rem;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.rotate-con-pan {
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+    .rotate-con-pan img {
+        position: absolute;
+        top: 0.26rem;
+        width: 5.2rem;
+        margin: 0 auto;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden; /* Chrome 和 Safari */
+        -moz-backface-visibility: hidden; /* Firefox */
+        -ms-backface-visibility: hidden;
+    }
+
+.rotate-con-zhen {
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.75rem;
+    margin-top: -1.2rem;
+    width: 1.5rem;
+}
+
+    .rotate-con-zhen img {
+        width: 1.5rem;
+    }
+
+.App-land {
+    margin-top: 0.45rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.form_group_box {
+    overflow: hidden;
+}
+
+.form-group {
+    margin-bottom: 0.15rem;
+    float: left;
+}
+
+.form-group label {
+        float: left;
+        margin-bottom: 0;
+        text-align: right;
+        width: 1.5rem;
+        height: 0.58rem;
+        color: #fff;
+        font-size: 0.3rem;
+        padding-top: 0.1rem;
+        padding-right: 0.1rem;
+        padding-left: 0.1rem;
+    }
+
+.form-group-input {
+    float: left;
+}
+
+.error span {
+    font-size: 0.24rem;
+    text-align: left;
+}
+
+.form-group-input input {
+        width: 3.7rem;
+        height: 0.6rem;
+        border: none;
+        border: 1px solid #77c5a0;
+        border-radius: 0.06rem;
+        outline: none;
+        text-indent: 0.2rem;
+        background-color: black;
+        color: #fff;
+        opacity: .3;
+    }
+
+.log_off {
+    padding-top: 0.5rem;
+    width: 3.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.head_scul {
+    background: url('../img/HHSW_WAYBILL_BG.png') no-repeat;
+    float: left;
+    background-size:100%;
+    height:1rem;
+    width:1rem;
+    position:relative;
+}
+
+.head_scul img {
+        width: 0.8rem;
+        height: 0.75rem;
+        position:absolute;
+        top:0.06rem;
+        left:0.1rem;
+
+}
+
+.log_off span {
+    float: left;
+    font-size: 0.3rem;
+    color: #fff;
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.log_off a {
+    padding-top: 0.22rem;
+    float: right;
+    color: #ffb412;
+    font-size: 0.32rem;
+}
+
+.land {
+    float: left;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.3rem;
+}
+
+.subImg {
+    width: 1.5rem;
+    vertical-align: top;
+}
+
+.winner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.winner_title {
+    width: 6.2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.winner_title img {
+        width: 4.3rem;
+        padding-left: 0.95rem;
+        padding-right: 0.95rem;
+    }
+
+.winner_big {
+    overflow: hidden;
+    clear: both;
+    width: 6.2rem;
+    height: 3.5rem;
+    background: black;
+    opacity: 0.3;
+    border-radius: 0.06rem;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.winner_box {
+    overflow: auto;
+    height: auto;
+}
+
+.winner_box ul {
+        padding-left: 0.26rem;
+        padding-right: 0.26rem;
+        overflow: hidden;
+        display: flex;
+        line-height: 0.4rem;
+        justify-content: space-between;
+    }
+
+ .winner_box ul li {
+            flex:1;
+            list-style: none;
+            font-size: 0.22rem;
+            color: #fff;
+            opacity: 1;
+        }
+
+#demo2 {
+    overflow: hidden;
+    height: auto;
+}
+
+    #demo2 ul {
+        padding-left: 0.26rem;
+        padding-right: 0.26rem;
+        overflow: hidden;
+        display: flex;
+        line-height: 0.4rem;
+        justify-content: space-between;
+    }
+
+ #demo2 ul li {
+            flex:1;
+            list-style: none;
+            font-size: 0.22rem;
+            color: #fff;
+            opacity: 1;
+        }
+.logo {
+    width: 1.3rem;
+    padding: 0.1rem 0.2rem;
+    float: left;
+}
+
+    .logo img {
+        width: 1.3rem;
+    }
+
+.prompt {
+    float: left;
+    padding-top: 0.15rem;
+    padding-right: 0.2rem;
+}
+
+    .prompt h3 {
+        font-size: 0.36rem;
+    }
+
+    .prompt p {
+        font-size: 0.24rem;
+        padding-top: 0.3rem;
+    }
+
+.fast_down {
+    display: block;
+    float: left;
+    margin: 0.5rem 0.3rem;
+}
+
+    .fast_down img {
+        width: 1.5rem;
+    }
+.shade{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+    height:100%;
+    background:black;
+    opacity:0.6;
+    overflow:hidden;
+}
+.point img{
+    position:absolute;
+    top:0.3rem;
+   left:0.2rem;
+    z-index:666;
+    width:7rem;
+}
+.win_severse{
+    width:2.4rem;
+    position:absolute;
+    top:3.8rem;
+    left:2.5rem;
+    z-index:999;
+    border-radius:0.08rem;
+}
+
+.win_severse ul li {
+    font-size: 0.3rem;
+    color: #000;
+    text-align: center;
+    list-style: none;
+    line-height: 30px;
+}
+
+.hidden_index {
+    display: none;
+}
+.error_va{
+   width:0.8rem;
+   position:absolute;
+   top:1.9rem;
+   right:1.2rem;
+   z-index:888;
+
+}
+.error_va img{
+    width:0.7rem;
+}
+.height{
+    height:2rem;
+}
+.downloadBox {
+    width: 100%;
+    height: 1.5rem;
+    background: #fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:9999;
+}

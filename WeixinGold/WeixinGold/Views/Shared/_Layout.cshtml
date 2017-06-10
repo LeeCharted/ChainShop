@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Content/mobileCss", "~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        (function () {
+            function w() {
+                var r = document.documentElement;
+                var a = r.getBoundingClientRect().width;
+                if (a > 750) {
+                    a = 750;
+                }
+                rem = a / 7.5;
+                r.style.fontSize = rem + "px"
+            }
+            var t;
+            w();
+            window.addEventListener("resize", function () {
+                clearTimeout(t);
+                t = setTimeout(w, 300)
+            }, false);
+        })();
+    </script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <script>
+        $(document).on("mobileinit", function () {
+            $.mobile.ajaxEnabled = false;
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
